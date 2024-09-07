@@ -1,0 +1,171 @@
+/* Resetting browser styles to default, minimal styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Custom styling */
+
+.app {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  padding: 30px 50px 70px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+input {
+  font-size: 18px;
+  padding: 3px 3px;
+  min-width: 300px;
+  font-family: inherit;
+}
+
+h2 {
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+}
+
+.form-wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.buttons-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px 30px;
+  background-color: #212121;
+  color: white;
+  border-radius: 10px;
+}
+
+.cv-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0px 10px;
+  aspect-ratio: 620 / 877;
+  border: 1px solid black;
+  padding: 15px 30px;
+}
+
+.cv-heading {
+  font-size: 37px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.cv-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.cv-content-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+.cv-text-wrapper {
+  margin-left: 30px;
+}
+
+.cv-text-big {
+  font-size: 25px;
+}
+
+.cv-text-small {
+  font-size: 18px;
+  margin-top: 7px;
+  margin-left: 30px;
+}
+
+.mobile {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 32px;
+  padding: 0px 30px;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width: 799px){
+  .mobile {
+    display: flex;
+  }
+}
