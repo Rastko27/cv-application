@@ -1,6 +1,6 @@
-import "../styles/index.css"
+import "../styles/index.css";
 
-export default function CV({formData}) {
+export default function CV({ formData }) {
    return (
       <div className="cv-wrapper">
          <h2 className="cv-heading">
@@ -14,7 +14,9 @@ export default function CV({formData}) {
             <h3>Education</h3>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">School name:</div>
-               <div className="cv-text-small">{formData.education.schoolName}</div>
+               <div className="cv-text-small">
+                  {formData.education.schoolName}
+               </div>
             </div>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">Title:</div>
@@ -29,23 +31,33 @@ export default function CV({formData}) {
             <h3>Experience</h3>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">Company:</div>
-               <div className="cv-text-small">{formData.experience.company}</div>
+               <div className="cv-text-small">
+                  {formData.experience.company}
+               </div>
             </div>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">Position:</div>
-               <div className="cv-text-small">{formData.experience.position}</div>
+               <div className="cv-text-small">
+                  {formData.experience.position}
+               </div>
             </div>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">Responsibilities:</div>
-               <div className="cv-text-small">{formData.experience.responsibilities}</div>
+               <div className="cv-text-small">
+                  {formData.experience.responsibilities}
+               </div>
             </div>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">Start Date:</div>
-               <div className="cv-text-small">{formData.experience.startWork}</div>
+               <div className="cv-text-small">
+                  {formData.experience.startWork}
+               </div>
             </div>
             <div className="cv-text-wrapper">
                <div className="cv-text-big">End Date:</div>
-               <div className="cv-text-small">{formData.experience.endWork}</div>
+               <div className="cv-text-small">
+                  {formData.experience.endWork}
+               </div>
             </div>
          </div>
       </div>

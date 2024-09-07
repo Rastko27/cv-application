@@ -46,7 +46,7 @@ function App() {
 
    const handleEdit = () => {
       setIsSubmitted(false);
-   }
+   };
 
    return (
       <div className="app">
